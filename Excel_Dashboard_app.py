@@ -1,10 +1,11 @@
+
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import plotly.express as px
 
 # File Uploader
-st.title(":bar_chart: Excel Data Visualization App")
+st.title(":bar_chart:Excel Data Visualization App")
 uploaded_file = st.file_uploader("Upload an Excel file", type=["xlsx"])
 
 if uploaded_file:
