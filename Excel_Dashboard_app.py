@@ -1,7 +1,18 @@
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
 import plotly.express as px
+
+import subprocess
+import sys
+
+# Install matplotlib if it's missing
+try:
+    import matplotlib.pyplot as plt
+except ModuleNotFoundError:
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "matplotlib"])
+    import matplotlib.pyplot as plt
+
+print("Matplotlib is working!")
 
 # File Uploader
 st.title(":bar_chart: Excel Data Visualization App")
