@@ -1,0 +1,6 @@
+streamlit
+pandas
+matplotlib.pyplot
+plotly
+openpyxl
+pip install -r requirements.txt
