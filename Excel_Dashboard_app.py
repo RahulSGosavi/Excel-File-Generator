@@ -1,4 +1,3 @@
-!pip install matplotlib pandas streamlit plotly openpyxl
 import matplotlib.pyplot as plt
 print("Matplotlib is working!")
 import streamlit as st
